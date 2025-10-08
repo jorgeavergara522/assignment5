@@ -2,6 +2,32 @@
 
 ---
 
+For this module, I explored advanced Python design patterns and data management using the pandas library.
+The goal was to understand how patterns like Factory, Observer, and Memento are used to make software more modular, scalable, and easier to maintain.
+The project builds on my previous calculator applications by integrating new functionality such as undo/redo, automatic history management, and CSV file handling.
+
+What I Learned
+
+The Observer Pattern keeps the system modular by letting different parts (like history tracking or autosave) stay updated automatically without tight coupling.
+
+The Memento Pattern handles undo/redo by saving the calculator’s state at specific moments and restoring them when needed.
+
+The Factory Pattern streamlines how operations (add, subtract, multiply, etc.) are created and used.
+
+pandas makes it simple to save, load, and manage calculation history in CSV format using UTF-8 encoding.
+
+The .env configuration makes the app flexible — behavior like autosave, precision, or file encoding can be changed without editing code.
+
+Commands Used:
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pytest
+python3 main.py
+
+
+
+
 # 🧩 1. Install Homebrew (Mac Only)
 
 > Skip this step if you're on Windows.
